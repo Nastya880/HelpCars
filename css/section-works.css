@@ -1,14 +1,11 @@
 :root {
-    --main-bg-color: rgb(99, 92, 92);
-    --nav-color: rgba(27, 25, 27, 0.6);
-    --nav-list-item: white;
-    --item-hover: grey;
-    --call: rgb(247, 253, 236);
+  --bckg-color: rgb(159, 159, 163);
+  --text-in-image: rgb(174, 174, 243);
 }
 
 .section-works {
   text-align: center;
-  background-color: yellow;
+  background-color: var(--bckg-color);
 }
 
 .section-works-container {
@@ -39,7 +36,7 @@ figcaption {
   line-height: 1.5;
   padding: 12px;
   margin-top: -63px;
-  background-color: green;
+  background-color: var(--text-in-image);
 }
 
 @media ( max-width: 1600px ) {

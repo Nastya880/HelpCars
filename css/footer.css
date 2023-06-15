@@ -1,11 +1,16 @@
+:root {
+  --bckg-color: rgb(159, 159, 163);
+  --text-in-image: rgb(174, 174, 243);
+}
+
 footer {
   text-align: center;
-  background-color: #292c30;
+  background-color: var(--bckg-color);
 }
 
 footer h4, p {
   padding-bottom: 10px;
-  color: $color-font-light;
+  color: var(--bckg-color);
 }
 
 form {
