@@ -1,7 +1,15 @@
+:root {
+    --main-bg-color: rgb(99, 92, 92);
+    --nav-color: rgba(27, 25, 27, 0.6);
+    --nav-list-item: white;
+    --item-hover: grey;
+    --call: rgb(247, 253, 236);
+}
+
 body {
     max-width: 1920px;
     margin: auto;
-    background-color: #303233;
+    background-color: var(--main-bg-color);
 }
 
 nav {
@@ -13,12 +21,14 @@ nav {
     align-items: center;
     width: 100%;
     padding-left: 0;
-    margin-left: 0;
-    background-color: rgba(27, 25, 27, 0.8);
+    margin-left: 0px;
+    background-color: var(--nav-color);
 }
 
 .logo-nav {
     width: 70px;
+    color: aliceblue;
+    /* outline-color: coral; */
     padding-left: 20px;
 }
 
@@ -27,29 +37,31 @@ nav {
     line-height: 2px;
     font-size: 15px;
     text-transform: uppercase;
-    color: white;
 }
 
 a {
-    color:rgb(253, 253, 255);
+    color:var(--nav-list-item);
+    text-decoration: none;
 }
 
-ul {
+.nav-list {
     display: flex;
     list-style: none;
 }
 
 .nav-list li:hover {
-    /* outline: 2px inset rgb(253, 253, 255); */
-    background-color: aliceblue;
+    outline: 2px inset white;
+    background-color: var(--item-hover);
 }
 
 .call {
-    font-size: 15px;
-    line-height: 2px;
+    padding: 10px;
     margin: 20px;
-    color:rgb(223, 245, 126);
-    /* cursor: pointer; */
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 2px;
+    color:var(--call);
+    border: 1px solid var(--call)
 }
 
 .btn-open-menu {
@@ -59,6 +71,7 @@ ul {
     background-size: cover;
     background-position: center;
     background-origin: content-box;
+    background-color: aliceblue;
     background-image: url(../img/icon-open-menu.png);
 }
 
@@ -68,33 +81,36 @@ ul {
     background-size: cover;
     background-position: center;
     background-origin: content-box;
-    background-image: url(../img/icon-open-menu.png);
+    background-color: aliceblue;
+    background-image: url(../img/icon-close-menu.png);
 }
 
 .nav-list-mob {
     position: absolute;
     /*  убирает контент  */
     display: none;
+    /* background-position: center; */
     margin-top: 150px;
-    background-color: grey;
+    background-color: var(--nav-color);
 }
 
 .list-mob-show {
     display: block;
-    /* width: 100%; */
+    /* width: 200px; */
+    width: 100%;
+    margin-left: auto;
 }
 
 .nav-item-mob {
     margin: auto;
-    /* border: 1px inset pink; */
     text-align: center;
     list-style: none;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .nav-item-mob:hover {
-    outline: 1px inset red;
-    background-color: cornflowerblue;
+    outline: 1px inset white;
+    background-color: var(--item-hover);
 }
 
 @media (max-width: 940px){

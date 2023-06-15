@@ -1,0 +1,79 @@
+:root {
+    --main-bg-color: rgb(99, 92, 92);
+    --nav-color: rgba(27, 25, 27, 0.6);
+    --nav-list-item: white;
+    --item-hover: grey;
+    --call: rgb(247, 253, 236);
+}
+
+.section-works {
+  text-align: center;
+  background-color: yellow;
+}
+
+.section-works-container {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 80px;
+}
+
+figure {
+  width: 600px;
+  padding: 10px;
+  filter: grayscale(1);
+}
+
+figure:hover {
+  filter: saturate(150%);
+}
+
+.section-works-container img {
+  width: 100%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+figcaption {
+  position: absolute;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 12px;
+  margin-top: -63px;
+  background-color: green;
+}
+
+@media ( max-width: 1600px ) {
+  figure {
+    width: 500px;
+  }
+}
+
+@media ( max-width: 1350px ) {
+  figure {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media ( max-width: 960px ) {
+  figure {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media ( max-width: 650px ) {
+  figcaption {
+    font-size: 16px;
+  }
+}
+
+@media ( max-width: 600px ) {
+  figure {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}

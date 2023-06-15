@@ -7,17 +7,20 @@
     <title>HelpCars</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/section-about-us.css">
+    <link rel="stylesheet" href="css/section-works.css">
+    <link rel="stylesheet" href="css/section-otz.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
     <header>
         <nav>
             <a href="#">
-                <img src="img/logo.jpg" alt="logo" class="logo-nav">
+                <img src="img/logo-car.png" alt="logo" class="logo-nav">
             </a>
 
             <ul class="nav-list">
-                <li><a href="">О нас</a></li>
-                <li><a href="">Работы</a></li>
+                <li><a href="#about-us">О нас</a></li>
+                <li><a href="#works">Работы</a></li>
                 <li><a href="">Отзывы</a></li>
                 <li><a href="#footer">Контакты</a></li>
             </ul>
@@ -34,14 +37,14 @@
             <!-- end mobile -->
 
             <div>
-                <p><a href="#" class="call">Позвонить</a></p>
+                <a href="#" class="call">Позвонить</a>
             </div>
         </nav>
     </header>
 
     <main>
 
-        <section class="section-about-us">
+        <section class="section-about-us" id="about-us">
             <div class="section-about-us-container">
                 <h2 class="author-heading">Эвакуатор</h2>
                 <h3 class="info-heading">Помогаем машинам</h3>
@@ -52,9 +55,157 @@
             <img src="img/logo-section-about-us.jpg" alt="bckg-image1">
         </section>
 
+        <!-- <section class="section-works" id="works">
+            <h4 class="works-heading">Работы</h4>
+            <div class="section-works-container">
+                <img src="img/background.jpeg" alt="work1">
+                <img src="img/background.jpeg" alt="work2">
+                <img src="img/background.jpeg" alt="work3">
+                <img src="img/background.jpeg" alt="work4">
+                <img src="img/background.jpeg" alt="work5">
+                <img src="img/background.jpeg" alt="work6">
+            </div>
+        </section>
 
+        <section class="section-otz"> -->
+
+        <!-- </section> -->
+
+        <section class="section-works" id="works">
+
+            <h4 class="section-works-heading">Некоторые из работ</h4>
+      
+            <div class="section-works-container">
+              <a href="#">
+                <figure class="work">
+                  <img src="img/background.jpeg" alt="Пример 1">
+                  <figcaption>example 1</figcaption>
+                </figure>
+              </a>
+              <a href="#">
+                <figure class="work">
+                  <img src="img/background.jpeg" alt="Пример 2">
+                  <figcaption>example 1</figcaption>
+                </figure>
+              </a>
+              <a href="#">
+                <figure class="work">
+                  <img src="img/background.jpeg" alt="Пример 3">
+                  <figcaption>example 1</figcaption>
+                </figure>
+              </a>
+              <a href="#">
+                <figure class="work">
+                  <img src="img/background.jpeg" alt="Пример 4">
+                  <figcaption>example 1</figcaption>
+                </figure>
+              </a>
+            </div>
+      
+          </section>
+      
+          <section class="section-otz">
+      
+            <div class="section-otz-container">
+      
+              <div class="section-otz-item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem delectus explicabo eveniet, rem laudantium a, ipsam nihil minus voluptatem mollitia, corporis enim pariatur nostrum. Voluptatem animi quae explicabo rem minima?</p>
+                <img src="img/logo-section-about-us.jpg" alt="Декоративный элемент">
+              </div>
+      
+              <div class="section-otz-item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim incidunt exercitationem dicta at debitis corrupti porro, velit, error saepe tempora quia obcaecati mollitia vitae, officiis libero. Id distinctio asperiores repudiandae.</p>
+              </div>
+      
+              <div class="section-otz-item">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic omnis, nobis aut ullam enim neque dolores? Debitis harum, odio facilis consectetur pariatur eveniet odit optio ut iure minima, cumque quo!</p>
+                <img src="img/logo-section-about-us.jpg" alt="Декоративный элемент">
+              </div>
+      
+              <div class="section-otz-item">
+                <h5>Отзывы</h5>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit quae officiis minus vel, perferendis beatae sit aliquam inventore nemo.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit quae officiis minus vel, perferendis beatae sit aliquam inventore nemo.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit quae officiis minus vel, perferendis beatae sit aliquam inventore nemo.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit quae officiis minus vel, perferendis beatae sit aliquam inventore nemo.</li>
+                </ul>
+              </div>
+      
+            </div>
+      
+          </section>
+      
+        </main>
+      
+        <footer id="footer">
+      
+          <div class="footer-container">
+      
+            <div class="footer-column">
+      
+              <form id="form" action="js/" method="">
+      
+                <h4 class="section-heading">Напишите мне</h4>
+      
+                <fieldset>
+      
+                  <p>
+                    Выберете удобное вам время
+                  </p>
+      
+                  <input id="mail" type="text" name="mail" maxlength="36" placeholder="введите вашу почту"
+                    autocomplete="on"><span></span><br>
+      
+                  <input id="name" type="text" name="name" maxlength="36" placeholder="введите ваше имя" autocomplete="on"><span></span><br>
+      
+                  <textarea id="message" name="message" rows="1" maxlength="160" placeholder="ваше сообщение"></textarea><span></span><br>
+      
+                  <button id="submit" type="submit" name="submit">Отправить</button><span></span>
+      
+                </fieldset>
+      
+              </form>
+      
+            </div>
+      
+            <div class="footer-column">
+      
+              <div class="container-logo">
+      
+                <img src="img/logo.jpg" alt="Лого">
+      
+                <p>
+                  <a href="#"> Private policy</a>
+                  <a href="#" id="footer-contact"> Contacts</a>
+                </p>
+      
+              </div>
+      
+              <div class="icon-social">
+      
+                <a href="#"><img src="img/icon_facebook.png" alt="Иконка Фэйсбук"></a>
+                <a href="#"><img src="img/icon_twitter.png" alt="Иконка Твиттер"></a>
+                <a href="#"><img src="img/icon_instagram.png" alt="Иконка Инстаграм"></a>
+      
+              </div>
+      
+            </div>
+      
+          </div>
+      
+          <p>2023</p>
+      
+        </footer>
+      
+
+      
+        <script src="js/script.js"></script>
+
+      </body>
+      
+      </html>
     </main>
 
 </body>
-<script src="js/script.js"></script>
 </html>
