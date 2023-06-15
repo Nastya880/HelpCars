@@ -5,7 +5,7 @@ body {
 }
 
 nav {
-    position: fixed;
+    position: fixed; /* чтобы не прокручивался */
     z-index: 3;
     max-width: 1920px;
     display: flex;
@@ -28,6 +28,10 @@ nav {
     color: white;
 }
 
+a {
+    color:rgb(253, 253, 255);
+}
+
 ul {
     display: flex;
 }
@@ -35,4 +39,70 @@ ul {
 .nav-list li:hover {
     outline: 2px inset rgb(253, 253, 255);
     background-color: aliceblue;
+}
+
+.call {
+    font-size: 15px;
+    line-height: 2px;
+    color:rgb(223, 245, 126);
+    /* cursor: pointer; */
+}
+
+.btn-open-menu {
+    width: 40px;
+    height: 32px;
+    background-size: cover;
+    background-position: center;
+    background-origin: content-box;
+    background-image: url(../img/icon-open-menu.png);
+}
+
+.btn-close-menu {
+    width: 40px;
+    height: 32px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/icon-open-menu.png);
+}
+
+.nav-list-mob {
+    position: absolute;
+    /*  убирает контент  */
+    display: none;
+    margin-top: 400px;
+    background-color: grey;
+}
+
+.list-mob-show {
+    display: block;
+}
+
+.nav-item-mob {
+    outline: 1px inset pink;
+}
+
+.nav-item-mob:hover {
+    outline: 1px inset red;
+    background-color: aliceblue;
+}
+
+@media (max-width: 940px){
+    /* nav {
+        justify-content: space-between;
+    } */
+
+    .nav-list {
+        position: absolute;
+        /* white-space: nowrap; */
+        /* убираю меню, отобржающееся на декстопе */
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 939px) {
+    .btn-open-menu, .btn-close-menu, .nav-list-mob {
+        display: none;
+    }
 }
