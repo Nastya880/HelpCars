@@ -1,26 +1,31 @@
 :root {
-    --main-bg-color: rgb(243, 11, 11);
+    --p-color: white;
+    --author-color: rgb(121, 227, 253);
+    --info-color: rgb(249, 255, 228);
+    
 }
 
 .section-about-us {
     position: relative;
-    margin-bottom: -5px;
-    background-image: url(../img/background.jpeg);
+    margin-bottom: -3px;
+    background-image: url(../img/bck1.png);
 }
 
 .section-about-us img {
     padding-top: 310px;
-    padding-right: 50px;
+    padding-right: 30px;
     padding-bottom: 300px;
     padding-left: 50px;
-    background:rgba(255, 255, 255, 0.01);
+    width: 200px;
+    background:rgba(255, 255, 255, 0.2);
     filter: drop-shadow(1px 1px 1px #ffffff36)
 }
 
 .section-about-us p {
     width: 100%;
     text-align: justify;
-    color:var(--main-bg-color);
+    color:var(--p-color);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .section-about-us-container {
@@ -35,7 +40,7 @@
 
 .author-heading {
     font-size: 65px;
-    color: var(--main-bg-color);
+    color: var(--author-color);
     line-height: 1.5;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -43,7 +48,7 @@
 
 .info-heading {
     font-size: 45px;
-    color: rgb(59, 38, 136);
+    color: var(--info-color);
     text-transform: uppercase;
     padding-bottom: 6px;
 }
@@ -60,11 +65,11 @@
     }
 
     .section-about-us-container {
-        width: 80%;
+        width: 70%;
     }
 
     .author-heading {
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .info-heading {
