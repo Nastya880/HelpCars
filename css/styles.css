@@ -12,11 +12,13 @@ nav {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    padding-left: 0;
+    margin-left: 0;
     background-color: rgba(27, 25, 27, 0.8);
 }
 
 .logo-nav {
-    width: 100px;
+    width: 70px;
     padding-left: 20px;
 }
 
@@ -34,16 +36,18 @@ a {
 
 ul {
     display: flex;
+    list-style: none;
 }
 
 .nav-list li:hover {
-    outline: 2px inset rgb(253, 253, 255);
+    /* outline: 2px inset rgb(253, 253, 255); */
     background-color: aliceblue;
 }
 
 .call {
     font-size: 15px;
     line-height: 2px;
+    margin: 20px;
     color:rgb(223, 245, 126);
     /* cursor: pointer; */
 }
@@ -51,6 +55,7 @@ ul {
 .btn-open-menu {
     width: 40px;
     height: 32px;
+    /* padding-left: -50px; */
     background-size: cover;
     background-position: center;
     background-origin: content-box;
@@ -62,6 +67,7 @@ ul {
     height: 32px;
     background-size: cover;
     background-position: center;
+    background-origin: content-box;
     background-image: url(../img/icon-open-menu.png);
 }
 
@@ -69,30 +75,39 @@ ul {
     position: absolute;
     /*  убирает контент  */
     display: none;
-    margin-top: 400px;
+    margin-top: 150px;
     background-color: grey;
 }
 
 .list-mob-show {
     display: block;
+    /* width: 100%; */
 }
 
 .nav-item-mob {
-    outline: 1px inset pink;
+    margin: auto;
+    /* border: 1px inset pink; */
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
 }
 
 .nav-item-mob:hover {
     outline: 1px inset red;
-    background-color: aliceblue;
+    background-color: cornflowerblue;
 }
 
 @media (max-width: 940px){
-    /* nav {
+    nav {
         justify-content: space-between;
-    } */
+    }
 
     .nav-list {
         position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding-top: 0px;
         /* white-space: nowrap; */
         /* убираю меню, отобржающееся на декстопе */
         clip-path: inset(100%);

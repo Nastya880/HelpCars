@@ -1,0 +1,73 @@
+.section-about-us {
+    position: relative;
+    margin-bottom: -5px;
+    background-image: url(../img/background.jpeg);
+}
+
+.section-about-us img {
+    padding-top: 310px;
+    padding-right: 50px;
+    padding-bottom: 300px;
+    padding-left: 50px;
+    background:rgba(255, 255, 255, 0.01);
+    filter: drop-shadow(1px 1px 1px #ffffff36)
+}
+
+.section-about-us p {
+    width: 100%;
+    text-align: justify;
+    color:blue;
+}
+
+.section-about-us-container {
+    position: absolute;
+    z-index: 1;
+    width: 30%;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.author-heading {
+    font-size: 65px;
+    color: yellowgreen;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.info-heading {
+    font-size: 45px;
+    color: yellow;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+}
+
+@media (max-width: 1600px) {
+    .section-about-us-container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 850px) {
+    .section-about-us p {
+        font-size: 15px;
+    }
+
+    .section-about-us-container {
+        width: 80%;
+    }
+
+    .author-heading {
+        font-size: 45px;
+    }
+
+    .info-heading {
+        font-size: 33px;
+    }
+
+    .section-about-us img {
+        width: 80%;
+    }
+}
