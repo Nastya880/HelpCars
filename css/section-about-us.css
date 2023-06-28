@@ -65,7 +65,7 @@
     }
 
     .section-about-us-container {
-        width: 78%;
+        width: 40%;
     }
 
     .author-heading {
@@ -78,6 +78,6 @@
     }
 
     .section-about-us img {
-        width: 80%;
+        width: 20%;
     }
 }
