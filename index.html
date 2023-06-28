@@ -1,204 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HelpCars</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/section-about-us.css">
     <link rel="stylesheet" href="css/section-works.css">
-    <link rel="stylesheet" href="css/section-otz.css">
+    <link rel="stylesheet" href="css/section-feedback.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/address.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#">
-                <img src="img/logo-car.png" alt="logo" class="logo-nav">
+        <nav class="nav-main">
+            <a>
+                <img src="img/logo-car.jpeg" alt="лого машины" class="logo-nav">
             </a>
 
-            <ul class="nav-list">
-                <li><a href="#about-us">О нас</a></li>
-                <li><a href="#works">Работы</a></li>
-                <li><a href="#otz">Отзывы</a></li>
-                <li><a href="#footer">Контакты</a></li>
+            <ul class="nav-main-list">
+                <li class="nav-main-item"><a href="#about-us"><p>О нас</p></a></li>
+                <li class="nav-main-item"><a href="#works"><p>Работы</p></a></li>
+                <li class="nav-main-item"><a href="#feedback"><p>Отзывы</p></a></li>
+                <li class="nav-main-item"><a href="#footer"><p>Контакты</p></a></li>
             </ul>
 
             <!-- start mobile -->
             <div class="btn-open-menu" id="btn-open-close-menu"></div>
-            <!-- <div id="btn-close-menu"></div> -->
-            <ul class="nav-list-mob" id="nav-list-mob">
-                <li class="nav-item-mob"><a href="#about-us">О нас</a></li>
-                <li class="nav-item-mob"><a href="#works">Работы</a></li>
-                <li class="nav-item-mob"><a href="#otz">Отзывы</a></li>
-                <li class="nav-item-mob"><a href="#footer">Контакты</a></li>
+            <ul class="nav-main-list-mob" id="nav-main-list-mob">
+                <li class="nav-main-item-mob"><a href="#"><p>О нас</p></a></li>
+                <li class="nav-main-item-mob"><a href="#works"><p>Работы</p></a></li>
+                <li class="nav-main-item-mob"><a href="#feedback"><p>Отзывы</p></a></li>
+                <li class="nav-main-item-mob"><a href="#footer"><p>Контакты</p></a></li>
             </ul>
             <!-- end mobile -->
 
-            <div>
-                <a href="#" class="call">Позвонить</a>
+            <div class="calling-now">
+              <p>Позвонить сейчас</p>
             </div>
         </nav>
     </header>
 
     <main>
+      <h1 class="visually-hidden">Помогаем машинам - HelpCars</h1>
 
-        <section class="section-about-us" id="about-us">
-            <div class="section-about-us-container">
-                <h2 class="author-heading">Эвакуатор</h2>
-                <h3 class="info-heading">Помогаем машинам</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, cumque dolores temporibus odio repellendus facilis quo maiores, sunt natus, quia illo numquam quam delectus molestias laborum. Soluta, eum. Incidunt, corrupti.
-                </p>
-            </div>
+      <section class="section-about-us" id="about-us">
+          <div class="section-about-us-container">
+              <h2 class="author-heading">Эвакуатор</h2>
+              <h3 class="info-heading">Помогаем машинам</h3>
+              <p>Эвакуатор в Зеленограде, Москве и области окажет незамедлительную помощь в непредвиденных ситуациях. Работает круглосуточно 
+              </p>
+          </div>
+          <img src="img/author.jpg" alt="лого машины">
+      </section>
 
-            <img src="img/papa.png" alt="bckg-image1">
+      <section class="section-works" id="works">
+          <h4 class="section-heading">Некоторые из работ</h4>
+    
+          <div class="section-works-container">
+            <a>
+              <figure class="work">
+                <img src="img/work-1.jpg" alt="Машина 1">
+                <figcaption>Машина 1</figcaption>
+              </figure>
+            </a>
+            <a>
+              <figure class="work">
+                <img src="img/work-2.jpg" alt="Машина 2">
+                <figcaption>Машина 2</figcaption>
+              </figure>
+            </a>
+            <a>
+              <figure class="work">
+                <img src="img/work-3.jpg" alt="Машина 3">
+                <figcaption>Машина 3</figcaption>
+              </figure>
+            </a>
+            <a>
+              <figure class="work">
+                <img src="img/work-4.jpg" alt="Машина 4">
+                <figcaption>Машина 4</figcaption>
+              </figure>
+            </a>
+          </div>
         </section>
-
-        <section class="section-works" id="works">
-
-            <h2>Некоторые из работ</h2>
-      
-            <div class="section-works-container">
-              <a>
-                <figure class="work">
-                  <img src="img/i1.png" alt="Пример 1">
-                  <figcaption>example 1</figcaption>
-                </figure>
-              </a>
-              <a>
-                <figure class="work">
-                  <img src="img/i2.png" alt="Пример 2">
-                  <figcaption>example 1</figcaption>
-                </figure>
-              </a>
-              <a>
-                <figure class="work">
-                  <img src="img/i4.png" alt="Пример 3">
-                  <figcaption>example 1</figcaption>
-                </figure>
-              </a>
-              <a>
-                <figure class="work">
-                  <img src="img/i3.png" alt="Пример 4">
-                  <figcaption>example 1</figcaption>
-                </figure>
-              </a>
+    
+        <section class="section-feedback">
+          <h4 class="title-feedback">Отзывы</h4>
+          <div class="section-feedback-container">
+            <div class="section-feedback-item">
+              <p>Спасибо за помощь! Довезли машину без замечаний и в удобное для меня время. Все супер!Замечательный водитель! Без возражений подождал погрузку, была небольшая заминка и выгрузку.</p>
+              <img src="img/feedback.png" alt="Фото автора отзыва">
             </div>
-      
-          </section>
-      
-          <section class="section-otz">
-      
-            <div class="section-otz-container">
-      
-              <div class="section-otz-item">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem delectus explicabo eveniet, rem laudantium a, ipsam nihil minus voluptatem mollitia, corporis enim pariatur nostrum. Voluptatem animi quae explicabo rem minima?</p>
-                <img src="img/logo-section-about-us.jpg" alt="Декоративный элемент">
-              </div>
-      
-              <div class="section-otz-item">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim incidunt exercitationem dicta at debitis corrupti porro, velit, error saepe tempora quia obcaecati mollitia vitae, officiis libero. Id distinctio asperiores repudiandae.</p>
-              </div>
-      
-              <div class="section-otz-item">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic omnis, nobis aut ullam enim neque dolores? Debitis harum, odio facilis consectetur pariatur eveniet odit optio ut iure minima, cumque quo!</p>
-                <img src="img/logo-section-about-us.jpg" alt="Декоративный элемент">
-              </div>
-      
-              <div class="section-otz-item">
-                <h5>Отзывы</h5>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit quae officiis minus vel, perferendis beatae sit aliquam inventore nemo.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit quae officiis minus vel, perferendis beatae sit aliquam inventore nemo.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit quae officiis minus vel, perferendis beatae sit aliquam inventore nemo.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit quae officiis minus vel, perferendis beatae sit aliquam inventore nemo.</li>
-                </ul>
-              </div>
-      
+    
+            <div class="section-feedback-item">
+              <p>Замечательный водитель! Без возражений подождал погрузку, была небольшая заминка и выгрузку. Всю дорогу проговорили. Водит очень хорошо и аккуратно! 15 балов из 10</p>
+              <img src="img/feedback.png" alt="Фото автора отзыва">
             </div>
-      
-          </section>
-      
-        </main>
-      
+    
+            <div class="section-feedback-item">
+              <p>Машину доставил без проблем. Все четко.Замечательный водитель! Без возражений подождал погрузку, была небольшая заминка и выгрузку.</p>
+              <img src="img/feedback.png" alt="Фото автора отзыва">
+            </div>
+    
+            <div class="section-feedback-item">
+              <p>Машину доставил без проблем. Все четко. Замечательный водитель! Без возражений подождал погрузку, была небольшая заминка и выгрузку.</p>
+              <img src="img/feedback.png" alt="Фото автора отзыва">
+            </div>
+    
+          </div>
+        </section>
+      </main>
+
         <footer id="footer">
-      
           <div class="footer-container">
-      
             <div class="footer-column">
-      
-              <form id="form" action="js/" method="">
-      
+              <form id="form" action="js/" method="POST">
                 <h4 class="section-heading">Напишите мне</h4>
-      
                 <fieldset>
-      
-                  <p>
-                    Выберете удобное вам время
-                  </p>
-      
-                  <input id="mail" type="text" name="mail" maxlength="36" placeholder="введите вашу почту"
-                    autocomplete="on"><span></span><br>
-      
-                  <input id="name" type="text" name="name" maxlength="36" placeholder="введите ваше имя" autocomplete="on"><span></span><br>
-      
-                  <textarea id="message" name="message" rows="1" maxlength="160" placeholder="ваше сообщение"></textarea><span></span><br>
-      
-                  <button id="submit" type="submit" name="submit">Отправить</button><span></span>
-      
+                  <input type="email" name="mail" maxlength="40" placeholder="Введите EMAIL" autocomplete="on">
+                  <input type="text" name="name" maxlength="40" placeholder=" Ваше ИМЯ" autocomplete="on">
+                  <textarea name="message" rows="1" maxlength="200" placeholder="Ваше СООБЩЕНИЕ"></textarea>
+                  <button id="submit" type="submit" name="submit">Отправить</button>
                 </fieldset>
-      
               </form>
-      
             </div>
       
             <div class="footer-column">
-      
               <div class="container-logo">
-      
-                <img src="img/papa.png" alt="Лого">
-      
-                <p>
-                  <a href="#"> Private policy</a>
-                  <a href="#" id="footer-contact"> Contacts</a>
-                </p>
-      
+                <img src="img/author.jpg" alt="Лого футер">
               </div>
       
               <div class="icon-social">
-      
-                <a href="#"><img src="img/icon_facebook.png" alt="Иконка VK"></a>
-      
-              </div>
-      
-            </div>
-      
-          </div>
-      
-          <p>2023</p>
-      
-        </footer>
-      
-        <section class="section-modal">
-      
-          <div>
-            <div>
-              <img src="img/logo.jpg" alt="Иконка e-mail">
-              <h4>xxxxxxxx@gmail.com</h4>
-            </div>
-            <div>
-              <img src="img/icon-phone.png" alt="Иконка телефон">
-              <h4>+7-xxx-xxx-xx-xx</h4>
+                <a href="https://t.me/andromachee"><img src="img/icon-tg.png" alt="Иконка телеграм"></a>
+                <a href="https://vk.com/id461556121"><img src="img/icon-vk.png" alt="Иконка вк"></a>
+                <a href="https://wa.me/89032499997"><img src="img/icon-whatsapp.png" alt="Иконка вотсап"></a>
+              </div> 
             </div>
           </div>
-      
-        </section>
-      
-        <script src="js/script.js"></script>
+          <section class="section-modal-container">
+            <a href="tel:89032499997">+7-903-249-99-97</a>
+            <h4>nastyadmm@gmail.com</h4>
+          </section>
+      </footer>
 
       </body>
-      
+      <script src="js/script.js"></script>
       </html>
     </main>
 

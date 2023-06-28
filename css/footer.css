@@ -10,7 +10,7 @@ footer {
 
 footer h4, p {
   padding-bottom: 10px;
-  color: var(--bckg-color);
+  color: white;
 }
 
 form {
@@ -20,14 +20,6 @@ form {
   padding-bottom: 200px;
 }
 
-form span {
-  position: absolute;
-  margin-top: 4px;
-  margin-left: -30%;
-  color: #ffffff;
-  background-color: #ee606094;
-}
-
 .footer-container {
   display: flex;
   flex-wrap: wrap;
@@ -35,6 +27,16 @@ form span {
 
 .footer-container p {
   width: 80%;
+}
+
+.footer-container input, .footer-container textarea {
+  width: 80%;
+  margin-top: 22px;
+  padding: 6px;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  color: rgb(253, 251, 251);
+  font-size: 21px;
 }
 
 .footer-container textarea {
@@ -82,15 +84,6 @@ form span {
 
 .container-logo p {
   width: 100%;
-  margin-top: 20px;
-}
-
-.container-logo a {
-  color: yellow;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 .icon-social {
@@ -108,12 +101,15 @@ form span {
   footer p {
     font-size: 14px;
   }
+
   form span {
     margin-left: -60%;
   }
+
   .footer-column {
     width: 100%;
   }
+
   .footer-container img {
     padding-top: 20px;
   }

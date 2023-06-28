@@ -1,4 +1,4 @@
-let nav_list_mob = document.querySelector(".nav-list-mob")
+let nav_list_mob = document.querySelector(".nav-main-list-mob")
 let btn_menu = document.querySelector("#btn-open-close-menu")
 
 btn_menu.addEventListener("click", (e) => {

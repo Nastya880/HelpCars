@@ -1,0 +1,42 @@
+.section-modal {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  display: none;
+  justify-content: center;
+  top: 20%;
+  animation: bounceModal 2s;
+}
+
+.section-modal-container {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  box-shadow: 0 30px 50px rgba(114, 114, 114, 0.7);
+}
+
+
+.section-modal-container h4 {
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.section-modal-block {
+  display: flex;
+  align-items: center;
+}
+
+@media ( max-width: 1000px ) {
+  .section-modal-container {
+    width: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .section-modal-container img {
+    margin-left: 5%;
+  }
+}

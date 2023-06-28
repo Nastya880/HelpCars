@@ -1,19 +1,18 @@
 :root {
     --p-color: white;
-    --author-color: rgb(121, 227, 253);
+    --author-color: white;
     --info-color: rgb(249, 255, 228);
-    
 }
 
 .section-about-us {
     position: relative;
-    margin-bottom: -3px;
-    background-image: url(../img/bck1.png);
+    margin-bottom: -5px;
+    background-image: url(../img/logo-big.jpg);
 }
 
 .section-about-us img {
     padding-top: 310px;
-    padding-right: 30px;
+    padding-right: 49px;
     padding-bottom: 300px;
     padding-left: 50px;
     width: 200px;
@@ -24,6 +23,7 @@
 .section-about-us p {
     width: 100%;
     text-align: justify;
+    font-size: 30px;
     color:var(--p-color);
     background-color: rgba(0, 0, 0, 0.7);
 }
@@ -61,19 +61,20 @@
 
 @media (max-width: 850px) {
     .section-about-us p {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .section-about-us-container {
-        width: 70%;
+        width: 78%;
     }
 
     .author-heading {
-        font-size: 40px;
+        font-size: 42px;
     }
 
     .info-heading {
-        font-size: 33px;
+        font-size: 23px;
+        color:white;
     }
 
     .section-about-us img {

@@ -12,7 +12,15 @@ body {
     background-color: var(--main-bg-color);
 }
 
-nav {
+.section-heading {
+  padding-top: 200px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.nav-main {
     position: fixed; /* чтобы не прокручивался */
     z-index: 3;
     max-width: 1920px;
@@ -21,14 +29,27 @@ nav {
     align-items: center;
     width: 100%;
     padding-left: 0;
-    margin-left: 0px;
+    margin-left: 0;
     background-color: var(--nav-color);
+}
+
+.nav-main p {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  line-height: 1.6;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--nav-list-item);
+}
+
+.nav-main-list {
+    display: flex;
 }
 
 .logo-nav {
     width: 70px;
-    color: aliceblue;
-    /* outline-color: coral; */
     padding-left: 20px;
 }
 
@@ -37,6 +58,15 @@ nav {
     line-height: 2px;
     font-size: 15px;
     text-transform: uppercase;
+}
+
+.calling-now p {
+    background-color: rgba(231, 231, 231, 0.5);
+    border: 2px solid black;
+    color: black;
+    font-size: 18px;
+    line-height: 1.6;
+    cursor: pointer;
 }
 
 a {
@@ -49,7 +79,7 @@ a {
     list-style: none;
 }
 
-.nav-list li:hover {
+.nav-main-list li:hover {
     outline: 2px inset white;
     background-color: var(--item-hover);
 }
@@ -67,11 +97,9 @@ a {
 .btn-open-menu {
     width: 40px;
     height: 32px;
-    /* padding-left: -50px; */
     background-size: cover;
     background-position: center;
     background-origin: content-box;
-    background-color: aliceblue;
     background-image: url(../img/icon-open-menu.png);
 }
 
@@ -81,50 +109,50 @@ a {
     background-size: cover;
     background-position: center;
     background-origin: content-box;
-    background-color: aliceblue;
     background-image: url(../img/icon-close-menu.png);
 }
 
-.nav-list-mob {
+.nav-main-list-mob {
     position: absolute;
     /*  убирает контент  */
     display: none;
-    /* background-position: center; */
-    margin-top: 150px;
+    background-position: center;
+    margin-top: 310px;
     background-color: var(--nav-color);
 }
 
 .list-mob-show {
     display: block;
-    /* width: 200px; */
+    width: 200px; 
     width: 100%;
     margin-left: auto;
 }
 
-.nav-item-mob {
+.nav-main-item-mob {
+    outline: 1px inset rgb(2, 2, 27);
     margin: auto;
     text-align: center;
     list-style: none;
-    font-size: 22px;
+    font-size: 20px;
 }
 
-.nav-item-mob:hover {
+.nav-main-item-mob:hover {
     outline: 1px inset white;
     background-color: var(--item-hover);
 }
 
 @media (max-width: 940px){
-    nav {
+    .section-heading {
+        font-size: 30px;
+    }
+
+    .nav-main {
         justify-content: space-between;
     }
 
-    .nav-list {
-        position: absolute;
+    .nav-main-list {
         width: 1px;
-        height: 1px;
-        margin: -1px;
-        padding-top: 0px;
-        /* white-space: nowrap; */
+        white-space: nowrap;
         /* убираю меню, отобржающееся на декстопе */
         clip-path: inset(100%);
         clip: rect(0 0 0 0);
@@ -133,7 +161,7 @@ a {
 }
 
 @media (min-width: 939px) {
-    .btn-open-menu, .btn-close-menu, .nav-list-mob {
+    .btn-open-menu, .btn-close-menu, .nav-main-list-mob {
         display: none;
     }
 }
